@@ -1,0 +1,27 @@
+mixin list (id,...items)
+	ul(id=id)
+		each item in items
+			li.list #{item}
+doctype html
+html
+	head
+		meta(charset='uft-8')
+		title pug test
+		link(href='../bower/bootstrap/dist/css/bootstrap.min.css',rel='stylesheet')
+		link(href='../styles/main.css',rel='stylesheet')
+		script(src='../bower/jquery/dist/jquery.min.js')
+		script(src='../bower/bootstrap/dist/js/bootstrap.min.js')
+		script(src='../javascripts/common.js')
+	body
+		.container
+			.row
+				.col-sm-6
+					h1.test welcome to pug
+					+list(ul,1,2,3,4,5,6,7,8,8)
+					input(type='radio',checked).radio
+					script.
+						var checkeds = true;
+						document.querySelector('.radio').onclick = function () {
+							this.checked = checkeds = !checkeds;
+							console.log(this.checked);
+						}

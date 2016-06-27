@@ -1,0 +1,23 @@
+{
+  "name": "football",
+  "description": "football",
+  "main": "app",
+  "license": "ISC",
+  "keywords": [
+    "footbal"
+  ],
+  "homepage": "https://github.com/diziduzou/football",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.1.7"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
