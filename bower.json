@@ -1,12 +1,22 @@
 {
-  "name": "football",
-  "description": "football",
-  "main": "app",
-  "license": "ISC",
-  "keywords": [
-    "footbal"
+  "name": "FE-template",
+  "version": "0.1.1",
+  "homepage": "https://github.com/chen844033231/FE-template",
+  "authors": [
+    "marchen <844033231@qq.com>"
   ],
-  "homepage": "https://github.com/diziduzou/football",
+  "description": "fe-template",
+  "main": "app.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "gulp",
+    "workflow"
+  ],
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -15,9 +25,11 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^2.1.7"
-  },
-  "devDependencies": {
-    "bootstrap": "^3.3.6"
+    "jquery": "2.2.4",
+    "zepto": "~1.1.6",
+    "ractive": "~0.7.3",
+    "normalize.css": "~3.0.3",
+    "html5shiv": "~3.7.2",
+    "bootstrap": "~3.3.6"
   }
 }

@@ -1,0 +1,38 @@
+extends common/layout
+include common/found-title
+block title
+	title 发现球队
+append style
+	link(rel='stylesheet' href='../public/css/found.css')
+	
+block body
+	div.container
+		+Title(1)
+
+	div.Team
+		div.search
+			div.row
+				div.col-xs-8
+					input.search(type='search')
+				div.col-xs-4
+					+DropDown()
+		div.media.teamlist
+			div.media-left
+				img.media-object(src='./images/team_default_pic.png')
+			div.media-body
+				h1 球队名称
+				h4 
+					span 胜
+					span 25 /
+					span 平
+					span 25 /
+					span 负
+				h4 四川 成都 (21人)
+			div.media.head
+				div.media-left
+					img.media-object(src='./images/head_default.png')
+				div.media-body
+					h4 创建者
+					h5 徐鹏
+				div.media-right
+					a 约比赛
