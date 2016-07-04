@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <title>标题</title>
+    <script src="../../public/bower/jquery/dist/jquery.min.js"></script>
+    <script src="../../public/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../../public/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/foundPlayerInvite.css"/>
+  </head>
+  <div id="myTabs">
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#in" aria-controls="in" role="tab" data-toggle="tab">入队邀请</a></li>
+      <li role="presentation"><a href="#yue" aria-controls="in" role="tab" data-toggle="tab">约球邀请</a></li>
+    </ul>
+    <p class="gray-line"></p>
+    <div class="tab-content">
+      <div role="tabpanel" id="in" class="tab-pane active">
+        <p class="title">选择您的球队</p>
+        <div class="in">
+          <div data-toggle="buttons" class="btn-group">
+            <label class="btn active">
+              <input type="radio" name="options" autocomplete="off" checked="checked"/>
+              <div class="media">
+                <div class="media-left media-middle"><span class="icon"></span></div>
+                <div class="media-body"><img src="../images/team_default_pic.png" alt="" class="media-object"/></div>
+                <div class="media-right media-middle">
+                  <h5>洋河蓝色经典</h5>
+                </div>
+              </div>
+            </label>
+            <label class="btn">
+              <input type="radio" name="options" autocomplete="off" checked="checked"/>
+              <div class="media">
+                <div class="media-left media-middle"><span class="icon"></span></div>
+                <div class="media-body"><img src="../images/team_default_pic.png" alt="" class="media-object"/></div>
+                <div class="media-right media-middle">
+                  <h5>洋河蓝色经典</h5>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" id="yue" class="tab-pane"></div>
+    </div>
+    <div class="green-div">
+      <button class="green">发送邀请</button>
+    </div>
+  </div>
+</html>

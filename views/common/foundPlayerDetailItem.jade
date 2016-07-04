@@ -1,0 +1,140 @@
+mixin Actives
+	div.actives
+		ul.list-group
+			li.list-group-item
+				div.media
+					div.media-left.media-middle
+						img.media-object(src='../images/head_default.png')
+					div.media-body
+						h6.media-heading 2016/3/7 17:45
+						h6.media-middle 凯乐520
+				p 今天踢得很爽
+				img.showimg(src="../images/pic_default.png", alt="")
+				hr
+				div.row
+					div.col-xs-6.border-right.row
+						span.good.col-xs-6
+							img(src="../images/icon_zan.png", alt="")
+						span.col-xs-6 230
+					div.col-xs-6.row
+						span.talk.col-xs-6
+							img(src="../images/icon_message.png", alt="")
+						span.col-xs-6 230
+
+mixin Picture
+	div.Picture
+		div.flex
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+
+mixin Course
+	div.Course
+		ul.list-group
+			li.list-group-item.data
+				p.title 球员数据
+				div.row
+					div.col-xs-4.border-right
+						p.top 171cm
+						p.bottom 身高
+					div.col-xs-4.border-right
+						p.top 69kg
+						p.bottom 体重	
+					div.col-xs-4.border-right
+						p.top 28岁
+						p.bottom 年龄
+			li.list-group-item.info
+				p.title 球队信息
+				div.media
+					div.media-left
+						img.media-object(src="../images/team_default_pic.png", alt="")
+					div.media-body.media-middle
+						p.top 中国队
+						p.bottom 中后卫 / 12号
+			li.ablity.list-group-item
+				p.title 个人能力
+				input(type="hidden" value='4.9' id='bar11')
+				input(type="hidden" value='3.2' id='bar22')
+				input(type="hidden" value='2.7' id='bar33')
+				input(type="hidden" value='1.9' id='bar44')
+				div.row
+					div.col-xs-3 中后卫
+					div.col-xs-7.progress
+						div.progress-bar(role='progress-bar' id='bar1')
+					div.col-xs-2 4.9
+				div.row
+					div.col-xs-3 后腰
+					div.col-xs-7.progress
+						div.progress-bar(role='progress-bar' id='bar2')
+					div.col-xs-2 3.2
+				div.row
+					div.col-xs-3 中场
+					div.col-xs-7.progress
+						div.progress-bar(role='progress-bar' id='bar3')
+					div.col-xs-2 2.7
+				div.row
+					div.col-xs-3 前锋
+					div.col-xs-7.progress
+						div.progress-bar(role='progress-bar' id='bar4')
+					div.col-xs-2 1.9
+				script.
+					var val1 = document.getElementById('bar11').value;
+					var val2 = document.getElementById('bar22').value;
+					var val3 = document.getElementById('bar33').value;
+					var val4 = document.getElementById('bar44').value;
+					document.getElementById('bar1').style.width=(val1/5)*100+'%';
+					document.getElementById('bar2').style.width=(val2/5)*100+'%';
+					document.getElementById('bar3').style.width=(val3/5)*100+'%';
+					document.getElementById('bar4').style.width=(val4/5)*100+'%';
+				div.row.four
+					div.col-xs-6.border-right
+						div.media
+							div.media-left
+								img.media-object(src="../images/icon_power_big.png", alt="")
+							div.media-body.media-middle
+								p.number.first 4.1
+								p.desc 综合能力
+					div.col-xs-6
+						div.media
+							div.media-left
+								img.media-object(src="../images/icon_zan_big.png", alt="")
+							div.media-body.media-middle
+								p.number.second 230
+								p.desc 获赞
+				div.row.four
+					div.col-xs-6.border-right
+						div.media
+							div.media-left
+								img.media-object(src="../images/icon_gobal_big.png", alt="")
+							div.media-body.media-middle
+								p.number.third 23
+								p.desc 进球
+					div.col-xs-6
+						div.media
+							div.media-left
+								img.media-object(src="../images/icon_help_big.png", alt="")
+							div.media-body.media-middle
+								p.number.four 23
+								p.desc 助攻
+
+			li.list-group-item.attendance
+				div.row
+					input(type="hidden" id='att-lv' value="85%")
+					div.col-xs-3 出勤率
+					div.col-xs-7.progress
+						div.progress-bar(role='progress-bar' id='attendance-lv')
+					div.col-xs-2 85%
+				script.
+					document.getElementById('attendance-lv').style.width = document.getElementById('att-lv').value;
+
+
+
+
+	

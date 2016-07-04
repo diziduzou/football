@@ -1,6 +1,6 @@
--var bootstrap = '../public/bower/bootstrap/dist/'
--var jquery = '../public/bower/jquery/dist/jquery.min.js'
--var main = '../public/css/main.css'
+-var bootstrap = '../../public/bower/bootstrap/dist/'
+-var jquery = '../../public/bower/jquery/dist/jquery.min.js'
+-var main = '../css/main.css'
 <!DOCTYPE>
 html
 	head
@@ -9,13 +9,14 @@ html
 		meta(content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport")
 		block title
 			title 标题
+		append script
+			script(src='#{jquery}')
+			script(src='#{bootstrap}js/bootstrap.min.js')
 		append style 
 			link(rel='stylesheet' href='#{main}')
 			link(rel='stylesheet' href='#{bootstrap}css/bootstrap.min.css')
 
 	block body
 		body
-	append script
-		script(src='#{jquery}')
-		script(src='#{bootstrap}js/bootstrap.min.js')
+
 			

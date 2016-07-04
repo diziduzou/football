@@ -1,0 +1,142 @@
+mixin Actives
+	div.actives
+		ul.list-group
+			li.list-group-item
+				div.media
+					div.media-left.media-middle
+						img(src='../images/head_default.png')
+					div.media-body
+						h6.media-heading 2016/3/7 17:45
+						h6.media-middle 凯乐520
+				p 今天踢得很爽
+				img(src="../images/pic_default.png", alt="")
+				hr
+				div.row
+					div.col-xs-6.border-right.row
+						span.good.col-xs-6
+							img(src="../images/icon_zan.png", alt="")
+						span.col-xs-6 230
+					div.col-xs-6.row
+						span.talk.col-xs-6
+							img(src="../images/icon_message.png", alt="")
+						span.col-xs-6 230
+
+
+mixin TeamMate
+	div.TeamMate
+		ul.list-group
+			li.list-group-item
+				div.media
+					div.media-left
+						img.media-object(src="../images/head_default.png", alt="")
+					div.media-body.media-middle
+						div.row
+							div.col-xs-5
+								h6 刘健
+							div.col-xs-3
+								h6 77号
+							div.col-xs-4
+								h6 中后卫
+
+
+mixin Reward
+	div.Reward
+		ul.list-group
+			li.list-group-item
+				p.title 球队战绩
+				div(id='MainCanvas')
+				input(type="hidden" value='23' id='win')
+				input(type="hidden" value='39' id='lose')
+				input(type="hidden" value='19' id='eq')
+				script.
+					var myMain = echarts.init(document.getElementById('MainCanvas'));
+					var winword = '胜'+document.getElementById('win').value;
+					var loseword = '负'+document.getElementById('lose').value;
+					var eqword = '平'+document.getElementById('eq').value;
+					var option = {
+						series:[
+							{
+								name:'',
+								type:'pie',
+								radius:['40%','55%'],
+								data:[
+									{value:document.getElementById('win').value,name:winword,itemStyle:{normal:{color:'#00DB90'}}},
+									{value:document.getElementById('lose').value,name:loseword,itemStyle:{normal:{color:'#FF1010'}}},
+									{value:document.getElementById('eq').value,name:eqword,itemStyle:{normal:{color:'#007BEE'}}}
+								]
+							}
+						]
+					};
+					myMain.setOption(option);
+			li.list-group-item
+				p.title 攻守能力
+				div.progress
+					input(type="hidden" value='19' id='off')
+					input(type="hidden" value='83' id='def')
+					div.progress-bar.progress-bar-success(id='offensive')
+					div.progress-bar.progress-bar-danger(id='defence')
+					script.
+						var off = parseInt(document.querySelector('#off').value);
+						var def = parseInt(document.querySelector('#def').value)
+						var allValue = off + def;
+						document.querySelector('#offensive').style.width = (off/allValue)*100 + '%';
+						document.querySelector('#defence').style.width = (def/allValue)*100 + '%';
+				div.row
+					div.col-xs-6.fl 进球19次
+					div.col-xs-6.fr 失球83次
+			li.list-group-item.player
+				p.title 球员榜
+					span #{'>'}
+				div.row
+					div.col-xs-2
+						img(src="../images/head_default.png", alt="")
+					div.col-xs-2
+						img(src="../images/head_default.png", alt="")
+					div.col-xs-2
+						img(src="../images/head_default.png", alt="")
+					div.col-xs-2
+						img(src="../images/head_default.png", alt="")
+					div.col-xs-2
+						img(src="../images/head_default.png", alt="")
+					div.col-xs-2
+						img(src="../images/head_default.png", alt="")
+				div.row
+					div.col-xs-2
+						span 赵甜
+					div.col-xs-2
+						span 赵甜
+					div.col-xs-2
+						span 赵甜
+					div.col-xs-2
+						span 赵甜
+					div.col-xs-2
+						span 赵甜
+					div.col-xs-2
+						span 赵甜
+			li.list-group-item.data
+				p.title 球员数据
+				div.row
+					div.col-xs-4
+						p 171cm
+						p 平均身高
+					div.col-xs-4
+						p 69kg
+						p 平均体重
+					div.col-xs-4.noborder
+						p 28岁
+						p 平均年龄
+
+
+mixin Picture
+	div.Picture
+		div.flex
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")
+			div.img
+				img(src="../images/pic_default.png", alt="")

@@ -1,0 +1,43 @@
+mixin In
+	div.in
+		div.btn-group(data-toggle='buttons')
+			label.btn.active
+				input(type="radio" name='options' autocomplete='off' checked)
+				div.media
+					div.media-left.media-middle
+						span.icon
+					div.media-body
+						img.media-object(src="../images/team_default_pic.png", alt="")
+					div.media-right.media-middle
+						h5 洋河蓝色经典
+			label.btn
+				input(type="radio" name='options' autocomplete='off' checked)
+				div.media
+					div.media-left.media-middle
+						span.icon
+					div.media-body
+						img.media-object(src="../images/team_default_pic.png", alt="")
+					div.media-right.media-middle
+						h5 洋河蓝色经典
+
+
+extends ../common/layout
+
+append style 
+	link(rel="stylesheet", href="../css/foundPlayerInvite.css")
+
+block body
+	div(id='myTabs')
+		ul.nav.nav-pills
+			li(role='presentation').active
+				a(href='#in' aria-controls='in' role='tab' data-toggle='tab') 入队邀请
+			li(role='presentation')
+				a(href='#yue' aria-controls='in' role='tab' data-toggle='tab') 约球邀请
+		p.gray-line
+		div.tab-content
+			div(role='tabpanel' id='in').tab-pane.active
+				p.title 选择您的球队
+				+In()
+			div(role='tabpanel' id='yue').tab-pane
+		div.green-div
+			button.green 发送邀请

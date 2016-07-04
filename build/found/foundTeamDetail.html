@@ -1,0 +1,195 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <script src="../../public/bower/jquery/dist/jquery.min.js"></script>
+    <script src="../../public/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../public/bower/chart.js"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../../public/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/foundTeamDetail.css"/>
+  </head>
+  <div class="media big">
+    <div class="media-left"><img src="../images/team_default_pic.png" class="media-object"/></div>
+    <div class="media-body media-middle">
+      <div class="media-heading row"><span class="col-xs-2">胜</span><span class="col-xs-2 col-xs-offset-2">负</span><span class="col-xs-2 col-xs-offset-2">平</span></div>
+      <div class="row"><span class="col-xs-2 big">13</span><span class="col-xs-2 col-xs-offset-2 big">11</span><span class="col-xs-2 col-xs-offset-2 big">12</span></div>
+      <div class="media small media-bottom">
+        <div class="row media-bottom">
+          <div class="col-xs-5"><a class="button a">比赛邀约</a></div>
+          <div class="col-xs-5 col-xs-offset-1"><a class="button b">+关注</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h4>蓝影梦之队</h4>
+    </li>
+    <li class="list-group-item">
+      <h6>成立于 2012年5月，队员13人，粉丝355人</h6>
+    </li>
+  </ul>
+  <div id="myTabs">
+    <ul role="tablist" class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#active" aria-controls="home" role="tab" data-toggle="tab">动态</a></li>
+      <li role="presentation"><a href="#picture" aria-controls="picture" role="tab" data-toggle="tab">照片</a></li>
+      <li role="presentation"><a href="#teamMate" aria-controls="teamMate" role="tab" data-toggle="tab">队员</a></li>
+      <li role="presentation" class="noborder"><a href="#reward" aria-controls="reward" role="tab" data-toggle="tab">战绩</a></li>
+    </ul>
+    <div class="tab-content">
+      <p class="gray-line"></p>
+      <div role="tabpanel" id="active" class="tab-pane active">
+        <div class="actives">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left media-middle"><img src="../images/head_default.png"/></div>
+                <div class="media-body">
+                  <h6 class="media-heading">2016/3/7 17:45</h6>
+                  <h6 class="media-middle">凯乐520</h6>
+                </div>
+              </div>
+              <p>今天踢得很爽</p><img src="../images/pic_default.png" alt=""/>
+              <hr/>
+              <div class="row">
+                <div class="col-xs-6 border-right row"><span class="good col-xs-6"><img src="../images/icon_zan.png" alt=""/></span><span class="col-xs-6">230</span></div>
+                <div class="col-xs-6 row"><span class="talk col-xs-6"><img src="../images/icon_message.png" alt=""/></span><span class="col-xs-6">230</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div role="tabpanel" id="picture" class="tab-pane">
+        <div class="Picture">
+          <div class="flex">
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" id="teamMate" class="tab-pane">
+        <div class="TeamMate">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left"><img src="../images/head_default.png" alt="" class="media-object"/></div>
+                <div class="media-body media-middle">
+                  <div class="row">
+                    <div class="col-xs-5">
+                      <h6>刘健</h6>
+                    </div>
+                    <div class="col-xs-3">
+                      <h6>77号</h6>
+                    </div>
+                    <div class="col-xs-4">
+                      <h6>中后卫</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div role="tabpanel" id="reward" class="tab-pane">
+        <div class="Reward">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <p class="title">球队战绩</p>
+              <div id="MainCanvas"></div>
+              <input type="hidden" value="23" id="win"/>
+              <input type="hidden" value="39" id="lose"/>
+              <input type="hidden" value="19" id="eq"/>
+              <script>
+                var myMain = echarts.init(document.getElementById('MainCanvas'));
+                var winword = '胜'+document.getElementById('win').value;
+                var loseword = '负'+document.getElementById('lose').value;
+                var eqword = '平'+document.getElementById('eq').value;
+                var option = {
+                	series:[
+                		{
+                			name:'',
+                			type:'pie',
+                			radius:['40%','55%'],
+                			data:[
+                				{value:document.getElementById('win').value,name:winword,itemStyle:{normal:{color:'#00DB90'}}},
+                				{value:document.getElementById('lose').value,name:loseword,itemStyle:{normal:{color:'#FF1010'}}},
+                				{value:document.getElementById('eq').value,name:eqword,itemStyle:{normal:{color:'#007BEE'}}}
+                			]
+                		}
+                	]
+                };
+                myMain.setOption(option);
+              </script>
+            </li>
+            <li class="list-group-item">
+              <p class="title">攻守能力</p>
+              <div class="progress">
+                <input type="hidden" value="19" id="off"/>
+                <input type="hidden" value="83" id="def"/>
+                <div id="offensive" class="progress-bar progress-bar-success"></div>
+                <div id="defence" class="progress-bar progress-bar-danger"></div>
+                <script>
+                  var off = parseInt(document.querySelector('#off').value);
+                  var def = parseInt(document.querySelector('#def').value)
+                  var allValue = off + def;
+                  document.querySelector('#offensive').style.width = (off/allValue)*100 + '%';
+                  document.querySelector('#defence').style.width = (def/allValue)*100 + '%';
+                </script>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 fl">进球19次</div>
+                <div class="col-xs-6 fr">失球83次</div>
+              </div>
+            </li>
+            <li class="list-group-item player">
+              <p class="title">球员榜<span>&gt;</span></p>
+              <div class="row">
+                <div class="col-xs-2"><img src="../images/head_default.png" alt=""/></div>
+                <div class="col-xs-2"><img src="../images/head_default.png" alt=""/></div>
+                <div class="col-xs-2"><img src="../images/head_default.png" alt=""/></div>
+                <div class="col-xs-2"><img src="../images/head_default.png" alt=""/></div>
+                <div class="col-xs-2"><img src="../images/head_default.png" alt=""/></div>
+                <div class="col-xs-2"><img src="../images/head_default.png" alt=""/></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-2"><span>赵甜</span></div>
+                <div class="col-xs-2"><span>赵甜</span></div>
+                <div class="col-xs-2"><span>赵甜</span></div>
+                <div class="col-xs-2"><span>赵甜</span></div>
+                <div class="col-xs-2"><span>赵甜</span></div>
+                <div class="col-xs-2"><span>赵甜</span></div>
+              </div>
+            </li>
+            <li class="list-group-item data">
+              <p class="title">球员数据</p>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p>171cm</p>
+                  <p>平均身高</p>
+                </div>
+                <div class="col-xs-4">
+                  <p>69kg</p>
+                  <p>平均体重</p>
+                </div>
+                <div class="col-xs-4 noborder">
+                  <p>28岁</p>
+                  <p>平均年龄</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script></script>
+  
+  
+  
+</html>

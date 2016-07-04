@@ -1,9 +1,9 @@
-extends common/layout
-include common/found-title
+extends ../common/layout
+include ../common/found-title
 block title
 	title 发现球队
 append style
-	link(rel='stylesheet' href='../public/css/found.css')
+	link(rel='stylesheet' href='../css/found.css')
 	
 block body
 	div.container
@@ -18,7 +18,7 @@ block body
 					+DropDown()
 		div.media.teamlist
 			div.media-left
-				img.media-object(src='./images/team_default_pic.png')
+				img.media-object(src='../images/team_default_pic.png')
 			div.media-body
 				h1 球队名称
 				h4 
@@ -30,7 +30,7 @@ block body
 				h4 四川 成都 (21人)
 			div.media.head
 				div.media-left
-					img.media-object(src='./images/head_default.png')
+					img.media-object(src='../images/head_default.png')
 				div.media-body
 					h4 创建者
 					h5 徐鹏

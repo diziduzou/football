@@ -1,0 +1,46 @@
+extends ../common/layout
+include ../common/foundPlayerDetailItem
+append style
+	link(rel="stylesheet", href="../css/foundPlayerDetail.css")
+block body
+	div.media.big
+		div.media-left
+			img.media-object(src='../images/head_default.png')
+		div.media-body.media-middle
+			div.media-heading.row
+				span.col-xs-2 动态
+				span.col-xs-2.col-xs-offset-2 关注
+				span.col-xs-2.col-xs-offset-2 粉丝
+			div.row
+				span.col-xs-2.big 52
+				span.col-xs-2.col-xs-offset-2.big 52
+				span.col-xs-2.col-xs-offset-2.big 52
+			div.media.small.media-bottom
+				div.row.media-bottom
+					div.col-xs-5
+						a.button.a 邀请
+					div.col-xs-5.col-xs-offset-1
+						a.button.b +关注
+	ul.list-group.big
+		li.list-group-item
+			h4 凯乐520
+		li.list-group-item
+			h6 煞笔没人要，白菜价破鞋
+	div(id='myTabs')
+		ul.nav.nav-pills(role="tablist")
+			li.active(role='presentation')
+				a(href="#active" aria-controls="active" role="tab" data-toggle="tab") 动态
+			li(role='presentation')
+				a(href="#picture" aria-controls="picture" role="tab" data-toggle="tab") 照片
+			li(role='presentation').noborder
+				a(href="#Course" aria-controls="Course" role="tab" data-toggle="tab") 历程
+		div.tab-content
+			p.gray-line
+			div(role='tabpanel' id='active').tab-pane.active
+				+Actives()
+			div(role='tabpanel' id='picture').tab-pane
+				+Picture()
+			div(role='tabpanel' id='Course').tab-pane
+				+Course()
+
+	

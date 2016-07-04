@@ -1,0 +1,205 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <title>标题</title>
+    <script src="../../public/bower/jquery/dist/jquery.min.js"></script>
+    <script src="../../public/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../../public/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/foundPlayerDetail.css"/>
+  </head>
+  <div class="media big">
+    <div class="media-left"><img src="../images/head_default.png" class="media-object"/></div>
+    <div class="media-body media-middle">
+      <div class="media-heading row"><span class="col-xs-2">动态</span><span class="col-xs-2 col-xs-offset-2">关注</span><span class="col-xs-2 col-xs-offset-2">粉丝</span></div>
+      <div class="row"><span class="col-xs-2 big">52</span><span class="col-xs-2 col-xs-offset-2 big">52</span><span class="col-xs-2 col-xs-offset-2 big">52</span></div>
+      <div class="media small media-bottom">
+        <div class="row media-bottom">
+          <div class="col-xs-5"><a class="button a">邀请</a></div>
+          <div class="col-xs-5 col-xs-offset-1"><a class="button b">+关注</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="list-group big">
+    <li class="list-group-item">
+      <h4>凯乐520</h4>
+    </li>
+    <li class="list-group-item">
+      <h6>煞笔没人要，白菜价破鞋</h6>
+    </li>
+  </ul>
+  <div id="myTabs">
+    <ul role="tablist" class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#active" aria-controls="active" role="tab" data-toggle="tab">动态</a></li>
+      <li role="presentation"><a href="#picture" aria-controls="picture" role="tab" data-toggle="tab">照片</a></li>
+      <li role="presentation" class="noborder"><a href="#Course" aria-controls="Course" role="tab" data-toggle="tab">历程</a></li>
+    </ul>
+    <div class="tab-content">
+      <p class="gray-line"></p>
+      <div role="tabpanel" id="active" class="tab-pane active">
+        <div class="actives">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="media">
+                <div class="media-left media-middle"><img src="../images/head_default.png" class="media-object"/></div>
+                <div class="media-body">
+                  <h6 class="media-heading">2016/3/7 17:45</h6>
+                  <h6 class="media-middle">凯乐520</h6>
+                </div>
+              </div>
+              <p>今天踢得很爽</p><img src="../images/pic_default.png" alt="" class="showimg"/>
+              <hr/>
+              <div class="row">
+                <div class="col-xs-6 border-right row"><span class="good col-xs-6"><img src="../images/icon_zan.png" alt=""/></span><span class="col-xs-6">230</span></div>
+                <div class="col-xs-6 row"><span class="talk col-xs-6"><img src="../images/icon_message.png" alt=""/></span><span class="col-xs-6">230</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div role="tabpanel" id="picture" class="tab-pane">
+        <div class="Picture">
+          <div class="flex">
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+            <div class="img"><img src="../images/pic_default.png" alt=""/></div>
+          </div>
+        </div>
+      </div>
+      <div role="tabpanel" id="Course" class="tab-pane">
+        <div class="Course">
+          <ul class="list-group">
+            <li class="list-group-item data">
+              <p class="title">球员数据</p>
+              <div class="row">
+                <div class="col-xs-4 border-right">
+                  <p class="top">171cm</p>
+                  <p class="bottom">身高</p>
+                </div>
+                <div class="col-xs-4 border-right">
+                  <p class="top">69kg</p>
+                  <p class="bottom">体重	</p>
+                </div>
+                <div class="col-xs-4 border-right">
+                  <p class="top">28岁</p>
+                  <p class="bottom">年龄</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item info">
+              <p class="title">球队信息</p>
+              <div class="media">
+                <div class="media-left"><img src="../images/team_default_pic.png" alt="" class="media-object"/></div>
+                <div class="media-body media-middle">
+                  <p class="top">中国队</p>
+                  <p class="bottom">中后卫 / 12号</p>
+                </div>
+              </div>
+            </li>
+            <li class="ablity list-group-item">
+              <p class="title">个人能力</p>
+              <input type="hidden" value="4.9" id="bar11"/>
+              <input type="hidden" value="3.2" id="bar22"/>
+              <input type="hidden" value="2.7" id="bar33"/>
+              <input type="hidden" value="1.9" id="bar44"/>
+              <div class="row">
+                <div class="col-xs-3">中后卫</div>
+                <div class="col-xs-7 progress">
+                  <div role="progress-bar" id="bar1" class="progress-bar"></div>
+                </div>
+                <div class="col-xs-2">4.9</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3">后腰</div>
+                <div class="col-xs-7 progress">
+                  <div role="progress-bar" id="bar2" class="progress-bar"></div>
+                </div>
+                <div class="col-xs-2">3.2</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3">中场</div>
+                <div class="col-xs-7 progress">
+                  <div role="progress-bar" id="bar3" class="progress-bar"></div>
+                </div>
+                <div class="col-xs-2">2.7</div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3">前锋</div>
+                <div class="col-xs-7 progress">
+                  <div role="progress-bar" id="bar4" class="progress-bar"></div>
+                </div>
+                <div class="col-xs-2">1.9</div>
+              </div>
+              <script>
+                var val1 = document.getElementById('bar11').value;
+                var val2 = document.getElementById('bar22').value;
+                var val3 = document.getElementById('bar33').value;
+                var val4 = document.getElementById('bar44').value;
+                document.getElementById('bar1').style.width=(val1/5)*100+'%';
+                document.getElementById('bar2').style.width=(val2/5)*100+'%';
+                document.getElementById('bar3').style.width=(val3/5)*100+'%';
+                document.getElementById('bar4').style.width=(val4/5)*100+'%';
+              </script>
+              <div class="row four">
+                <div class="col-xs-6 border-right">
+                  <div class="media">
+                    <div class="media-left"><img src="../images/icon_power_big.png" alt="" class="media-object"/></div>
+                    <div class="media-body media-middle">
+                      <p class="number first">4.1</p>
+                      <p class="desc">综合能力</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="media">
+                    <div class="media-left"><img src="../images/icon_zan_big.png" alt="" class="media-object"/></div>
+                    <div class="media-body media-middle">
+                      <p class="number second">230</p>
+                      <p class="desc">获赞</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row four">
+                <div class="col-xs-6 border-right">
+                  <div class="media">
+                    <div class="media-left"><img src="../images/icon_gobal_big.png" alt="" class="media-object"/></div>
+                    <div class="media-body media-middle">
+                      <p class="number third">23</p>
+                      <p class="desc">进球</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="media">
+                    <div class="media-left"><img src="../images/icon_help_big.png" alt="" class="media-object"/></div>
+                    <div class="media-body media-middle">
+                      <p class="number four">23</p>
+                      <p class="desc">助攻</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item attendance">
+              <div class="row">
+                <input type="hidden" id="att-lv" value="85%"/>
+                <div class="col-xs-3">出勤率</div>
+                <div class="col-xs-7 progress">
+                  <div role="progress-bar" id="attendance-lv" class="progress-bar"></div>
+                </div>
+                <div class="col-xs-2">85%</div>
+              </div>
+              <script>document.getElementById('attendance-lv').style.width = document.getElementById('att-lv').value;</script>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

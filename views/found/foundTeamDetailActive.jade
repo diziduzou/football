@@ -1,0 +1,44 @@
+extends ../common/layout
+
+block title
+	append style 
+		link(rel='stylesheet',href='../css/foundTeamDetailActive.css')
+block body 
+	div.media.user
+		div.media-left
+			img.media-object(src='../images/head_default.png')
+		div.media-body.media-middle
+			h6 凯乐520
+		div.media-right
+			h6.media-heading 2016/3/7 17:46
+	div.row.content
+		div.col-xs-12
+			p.title 今天踢得好爽
+			img(src='../images/pic_default.png')
+		hr
+		div.media
+			div.media-left.media-middle
+				h6 点赞230
+			div.media-body.media-middle
+				img.media-object(src='../images/head_default.png')
+			div.media-right.media-middle
+				span.good
+					img(src='../images/icon_zan.png')
+	div.gray-line
+	div.pinglun
+		p.title 评论2
+		ul.list-group
+			li.list-group-item.big
+				div.media
+					div.media-left.media-heading
+						img.media-object(src='../images/head_default.png')
+					div.media-body.media-middle
+						ul.lists-group
+							li.list-group-item
+								span.badge 1楼
+								span.name 凯乐520
+							li.list-group-item.time 2016/3/7 14:56
+							li.list-group-item
+								h4.con 飞铲好。
+
+
