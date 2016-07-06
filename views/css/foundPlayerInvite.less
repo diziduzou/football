@@ -16,8 +16,46 @@ p.title{
 .green{
 	display: block;width: 96%;margin: 20px auto;height:40px;border-radius: 20px;border:0;outline: none;background: #2AAE66;color: #fff;font-size: 16px;
 }
+.big{
+	.list-group-item{
+		border:0;
+		padding:0;
+		.blue{
+			color: #5BBE87;margin-left: 5px;
+		}
+		.badge{
+			background: #fff;color: #454545;
+		}
+	}
+}
+.small.list-group{
+	width:96%;margin-left: 1%;border:1px solid #ddd;
+	.list-group-item{
+		padding:10px 15px;
+		&:nth-child(1){
+			border-bottom:1px solid #DDD;margin-bottom:1px;
+		}
+	}
+}
 #myTabs{
 	background: #fff;
+	.nav.nav-pills{
+		li{
+			width: 49.5%;text-align: center;height: 25px;margin-top: 10px;margin-bottom:10px;display: flex;justify-content:center;
+			a{
+				color: #454545;width: 50%;height: 35px;display: block;padding:0;text-align: center;line-height: 25px;font-weight: bold;
+			}
+			&:nth-child(1){
+				border-right: 1px solid #eee;
+			}
+			&.active{
+				background: #FFF;
+				a{
+					color: #5BBE87;background: #FFF;border-bottom: 2px solid #5BBE87;padding-bottom: 10px;
+				}
+			}
+		}
+	}
 }
 .in{
 	.btn-group{
@@ -42,6 +80,32 @@ p.title{
 					&.icon{
 						display: block;width: 25px;height: 25px;background: url(../images/tick_hover.png);background-size: 25px 25px;
 					}
+				}
+			}
+		}
+	}
+}
+.Ball{
+	div.btn-group{
+		width: 100%;
+	}
+	label{
+		outline: none;width: 33%;display: flex;flex-direction:row;align-items:center;
+		&.active{
+			box-shadow: none;
+		}
+		span{
+			&:nth-child(1){
+				margin-right:10px;
+			}
+			&.icon{
+				display: block;width: 25px;height: 25px;background: url(../images/tick_normal.png);background-size: 25px 25px;
+			}
+		}
+		&.active{
+			span{
+				&.icon{
+					display: block;width: 25px;height: 25px;background: url(../images/tick_hover.png);background-size: 25px 25px;
 				}
 			}
 		}

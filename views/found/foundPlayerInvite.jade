@@ -19,7 +19,57 @@ mixin In
 						img.media-object(src="../images/team_default_pic.png", alt="")
 					div.media-right.media-middle
 						h5 洋河蓝色经典
-
+mixin Ball
+	div.Ball
+		ul.list-group.big
+			li.list-group-item
+				p.title 赛事
+				ul.list-group.small
+					li.list-group-item 对战
+						span.blue 蓝色经典
+						span.badge (2016.6.9)
+					li.list-group-item
+						div.btn-group(data-toggle='buttons').row
+							label.btn.active
+								span.icon
+								input(type="radio" name='optionss' autocomplete='off' checked)
+								span 左前锋
+							label.btn
+								span.icon
+								input(type="radio" name='optionsGame' autocomplete='off') 
+								span 左后卫
+							label.btn
+								span.icon
+								input(type="radio" name='optionsGame' autocomplete='off') 
+								span 左后卫
+							label.btn
+								span.icon
+								input(type="radio" name='optionsGame' autocomplete='off') 
+								span 左后卫
+			li.list-group-item
+				p.title 活动
+				ul.list-group.small
+					li.list-group-item 活动
+						span.blue 
+						span.badge (2016.6.9)
+					li.list-group-item
+						div.btn-group(data-toggle='buttons').row
+							label.btn.active
+								span.icon
+								input(type="radio" name='optionss' autocomplete='off' checked)
+								span 左前锋
+							label.btn
+								span.icon
+								input(type="radio" name='optionsGame' autocomplete='off') 
+								span 左后卫
+							label.btn
+								span.icon
+								input(type="radio" name='optionsGame' autocomplete='off') 
+								span 左后卫
+							label.btn
+								span.icon
+								input(type="radio" name='optionsGame' autocomplete='off') 
+								span 左后卫
 
 extends ../common/layout
 
@@ -39,5 +89,6 @@ block body
 				p.title 选择您的球队
 				+In()
 			div(role='tabpanel' id='yue').tab-pane
+				+Ball()
 		div.green-div
 			button.green 发送邀请

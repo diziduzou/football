@@ -1,31 +1,29 @@
 mixin Title(index)
-		div.row.nav.navbar-fixed-top
-			div.col-xs-3.hasRightBorder
-				div.btn-group
-					button.btn.btn-default.dropdown-toggle(type='button'  data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false") 成都&nbsp;
-						span.caret
-					ul.dropdown-menu
-						li
-							a(href='#') 成都
-						li
-							a(href='#') 河南
-			div.col-xs-3.hasRightBorder
-				a 约球
-			div.col-xs-3.hasRightBorder
-				a 球队
-			div.col-xs-3
-				a 球员
-mixin DropDown()
-	div.btn-group.full
-		button.btn.btn-default.dropdown-toggle(type='button'  data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false") 综合&nbsp;
-			span.caret
-		ul.dropdown-menu
-			li
-				a(href='#') 战绩
-					span.glyphicon.glyphicon-ok
-			li
-				a(href='#') 人气
-					span.glyphicon.glyphicon-ok
+		div.Home
+			ul.nav.nav-pills
+				li(role='presentation').border-right
+					a(aria-controls='home' role='button' data-toggle='dropdown' href='' aria-haspopup="true" aria-expanded="false").dropdown-toggle 成都
+					ul.dropdown-menu.list-group
+						li.list-group-item 赫曼
+						li.list-group-item 卡里塞
+						li.list-group-item 卡里塞
+						li.list-group-item 卡里塞
+						li.list-group-item 卡里塞
+						li.list-group-item 卡里塞
+						li.list-group-item 卡里塞
+				li(role='presentation').border-right.active
+					a(href='foundInvite.html') 约球
+				li(role='presentation').border-right
+					a(href="foundTeam.html") 球队
+				li(role='presentation')
+					a(href="foundPlayer.html") 球员
+mixin DropDown() 
+		a(aria-controls='home' role='button' data-toggle='dropdown' href='' aria-haspopup="true" aria-expanded="false").dropdown-toggle.list-group-item 成都
+		ul.dropdown-menu.list-group
+			li.list-group-item 赫曼
+				span.badge 
+			li.list-group-item 卡里塞
+				span 
 
 
 				

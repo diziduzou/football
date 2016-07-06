@@ -3,18 +3,20 @@ include ../common/found-title
 block title
 	title 发现球队
 append style
-	link(rel='stylesheet' href='../css/found.css')
+	link(rel='stylesheet' href='../css/foundTeam.css')
+	link(rel="stylesheet", href="../css/foundTitle.css")
 	
 block body
-	div.container
+	div.container-full
 		+Title(1)
 
 	div.Team
 		div.search
 			div.row
 				div.col-xs-8
-					input.search(type='search')
-				div.col-xs-4
+					input.search(type='search' placeholder='搜索')
+					span.icon
+				div.col-xs-3.col-xs-offset-1
 					+DropDown()
 		div.media.teamlist
 			div.media-left
