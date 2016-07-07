@@ -1,0 +1,63 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <title>标题</title>
+    <script src="../../public/bower/jquery/dist/jquery.min.js"></script>
+    <script src="../../public/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../public/bower/Swiper/dist/js/swiper.jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../../public/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../public/bower/Swiper/dist/css/swiper.min.css"/>
+    <link rel="stylesheet" href="../css/predetermineDetail.css"/>
+    <link rel="stylesheet" href="../css/star.css"/>
+  </head>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="../images/bg_.png" alt=""/></div>
+      <div class="swiper-slide"><img src="../images/bg_.png" alt=""/></div>
+      <div class="swiper-slide"><img src="../images/bg_.png" alt=""/></div>
+      <div class="swiper-slide"><img src="../images/bg_.png" alt=""/></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="heart"><span class="img"></span><span class="word">1705</span></div>
+  </div>
+  <script>
+    var mySwiper = new Swiper('.swiper-container',{
+    	autoplay: 3000,
+    	pagination : '.swiper-pagination',
+    	loop:true
+    });
+  </script>
+  <div class="media first">
+    <div class="media-body media-middle">
+      <h3>三清观（四川分观）</h3>
+      <div class="star star-3">
+        <div class="star-star"><span class="icon"></span><span class="icon"></span><span class="icon"></span><span class="icon"></span><span class="icon"></span></div>
+        <script></script>
+      </div>
+      <p>道士很多，全是尼姑</p>
+    </div>
+    <div class="media-right media-heading">
+      <button>收藏</button>
+    </div>
+  </div>
+  <div class="row first">
+    <div class="col-xs-8">
+      <p>距您：1.3km</p>
+      <p>xxxxxxxxxxxxxx</p>
+    </div>
+    <div class="col-xs-2"><a href="javascript:;"> <img src="../images/button_site.png" alt=""/></a></div>
+    <div class="col-xs-2"><a href="javascript:;"> <img src="../images/button_phone.png" alt=""/></a></div>
+  </div>
+  <div class="list-group">
+    <p class="title">预定</p>
+    <li class="list-group-item"><span class="big">9人场</span><span class="small">￥298</span><span class="badge">(送一件衣服)</span></li>
+    <li class="list-group-item"><span class="big">9人场</span><span class="small">￥298</span><span class="badge">(送一件衣服)</span></li>
+    <li class="list-group-item"><span class="big">9人场</span><span class="small">￥298</span><span class="badge">(送一件衣服)</span></li>
+  </div>
+  <div class="button">
+    <button>球场信息报错</button>
+  </div>
+</html>

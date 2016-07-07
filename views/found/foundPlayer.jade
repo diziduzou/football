@@ -4,6 +4,7 @@ block title
 	title 发现球队
 append style
 	link(rel='stylesheet' href='../css/foundTitle.css')
+	link(rel="stylesheet", href="../css/foundPlayer.css")
 	
 block body
 	div.container-full
@@ -17,4 +18,28 @@ block body
 					span.icon
 				div.col-xs-3.col-xs-offset-1
 					+DropDown()
+		div.media.teamlist
+			div.media-left
+				img.media-object(src='../images/head_default.png')
+			div.media-body
+				h1 球队名称
+				h4 
+					span 胜
+					span 25 /
+					span 平
+					span 25 /
+					span 负
+					span 10
+				h4.iconsss
+					span.icon1.icon
+					span 4.1
+					span.icon2.icon
+					span 230
+					span.icon3.icon
+					span 128
+			div.media.head
+				div.media-body.media-middle
+					span.position 前锋
+				div.media-right
+					a.media-middle 邀请
 		

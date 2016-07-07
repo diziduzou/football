@@ -31,5 +31,8 @@
     "normalize.css": "~3.0.3",
     "html5shiv": "~3.7.2",
     "bootstrap": "~3.3.6"
+  },
+  "devDependencies": {
+    "Swiper": "swiper#^3.3.1"
   }
 }

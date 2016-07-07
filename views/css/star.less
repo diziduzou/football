@@ -1,0 +1,23 @@
+.star{
+	height:30;overflow-x:hidden;
+	
+	span.icon{
+		width:30px;height: 30px;display: block;background:url(../images/icon_star_full.png) no-repeat;background-size: 30px 30px;
+	}
+	div.star-star{
+		width: 150;display: flex;flex-drection:row;
+	}
+	.STARS(@index){
+		&.star-@{index}{
+			width:30px*@index!important;
+			span.icon:nth-child(@{index}){
+				background: url(../images/icon_star_empty.png) no-repeat;background-size: 30px 30px;
+			}
+		}
+	}
+	.STARS(1);
+	.STARS(2);
+	.STARS(3);
+	.STARS(4);
+	.STARS(5);
+}

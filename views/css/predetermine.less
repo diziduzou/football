@@ -1,0 +1,100 @@
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background: #505868;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background: #505868;
+}
+.nav{
+	border:0;
+	li{
+		&.active{
+				background: #FFF;
+				a{
+					color: #5BBE87;background: #FFF;border-bottom: 2px solid #5BBE87;padding-bottom: 10px;
+				}
+		}
+		width: 49.5%;text-align: center;height: 25px;margin-top: 10px;margin-bottom: 10px;display: flex;justify-content:center;
+		a{
+			height: 35px;line-height: 25px;width: 50%;display: block;padding:0;color: #454545;font-weight: bold;
+		}
+		&.border-right{
+			border-right: 1px solid #eee;
+		}
+	}
+}
+.Title{
+	.row{
+		@height:45px;
+		@input-height:35px;margin:0;
+		.dropdown-toggle{
+			width: 100%;display: block;text-align: center;height: @height;line-height: @height;
+		}
+		.col-xs-9{
+			position: relative;
+			span.icon{
+				position: absolute;background: url(../images/icon_search.png);display: block;width: 25px;height: 25px;top: 8px;left: 17px;
+			}
+			input{
+				height: @input-height;margin-top: 5px;margin-bottom: 5px;width: 100%;padding-left: 32px;border-radius: 4px;outline: none;border:1px solid #ddd;
+			}
+		}
+		.col-xs-3{
+			padding:0;
+			a{
+				background: #505868;color: #fff;
+			}
+			.dropdown-menu{
+				width: 100%;min-width: 0;
+			}
+		}
+	}
+}
+
+.list-group.big{
+	background: #f2f2f2;padding-bottom: 30px;padding-top: 10px;
+	.media{
+		padding-bottom: 20px;
+	}
+	.list-group-item{
+		width: 96%;margin:0 auto;margin-bottom: 10px;
+	}
+	.list-group.small{
+		margin-bottom: 0;border-top: 1px solid #eee;padding-top: 15px;
+		.list-group-item{
+			border:0;padding-left: 0;padding-right: 0;
+		}
+		.price{
+			font-size: 20px;
+		}
+	}
+	
+		
+}
+.Item{
+	.media-object{
+		width: 120px;height: 80px;
+	}
+	.media-body{
+		*{
+			margin:0;	
+		}
+		h3{
+			font-size: 18px;font-weight: bold;line-height: 25px;
+		}
+		div.location{
+			color: #999;font-size: 12px;line-height: 20px;
+			
+		}
+	}
+	
+	.badge{
+		background: #fff;width: 85px;margin-top: -1px;
+		img{
+			width: 100%;
+		}
+	}
+	.icon_bg{
+		width: 20px;height: 20px;display: block;float: left;background: url(../images/Map-Locator.png);background-size: 20px 20px;
+	}
+
+}

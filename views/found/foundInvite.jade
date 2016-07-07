@@ -1,0 +1,30 @@
+extends ../common/layout
+include ../common/found-title
+append style
+	link(rel="stylesheet", href="../css/foundInvite.css")
+	link(rel="stylesheet", href="../css/foundTitle.css")
+
+block body
+	div.container-full
+		+Title(1)
+
+	div.Invite
+		div.search2
+			input(type="search" placeholder='搜索').search22
+			span.icon
+
+		div.InviteList
+			div.row
+				div.col-xs-4
+					img(src="../images/team_default_pic.png", alt="")
+					p.teamName 爱老虎油对
+				div.col-xs-4
+					img.VS(src="../images/VS.png", alt="")
+					p.teamName 2016/7/7
+				div.col-xs-4
+					img(src="../images/team_default_pic.png", alt="")
+					p.teamName 爱老虎油对
+			div.row
+				div.col-xs-6 差2人
+				div.col-xs-6.button
+					button 查看详情

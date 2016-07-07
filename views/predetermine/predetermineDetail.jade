@@ -1,0 +1,70 @@
+-var swiper = '../../public/bower/Swiper/dist'
+
+extends ../common/layout
+include ./star
+append style
+	-var swiper = '../../public/bower/Swiper/dist'
+	link(rel="stylesheet", href="#{swiper}/css/swiper.min.css")
+	link(rel="stylesheet", href="../css/predetermineDetail.css")
+	link(rel="stylesheet", href="../css/star.css")
+append script
+	-var swiper = '../../public/bower/Swiper/dist'
+	script(src='#{swiper}/js/swiper.jquery.min.js')
+block body
+	div.swiper-container
+		div.swiper-wrapper
+			div.swiper-slide
+				img(src="../images/bg_.png", alt="")
+			div.swiper-slide
+				img(src="../images/bg_.png", alt="")
+			div.swiper-slide
+				img(src="../images/bg_.png", alt="")
+			div.swiper-slide
+				img(src="../images/bg_.png", alt="")
+		div.swiper-pagination
+		div.heart
+			span.img
+			span.word 1705
+	script.
+		var mySwiper = new Swiper('.swiper-container',{
+			autoplay: 3000,
+			pagination : '.swiper-pagination',
+			loop:true
+		});
+	div.media.first
+		div.media-body.media-middle
+			h3 三清观（四川分观）
+			+star()
+			p 道士很多，全是尼姑
+		div.media-right.media-heading
+			button 收藏
+	div.row.first
+		div.col-xs-8
+			p 距您：1.3km
+			p xxxxxxxxxxxxxx
+		div.col-xs-2
+			a(href="javascript:;") 
+				img(src="../images/button_site.png", alt="")
+		div.col-xs-2
+			a(href="javascript:;") 
+				img(src="../images/button_phone.png", alt="")
+	div.list-group
+		p.title 预定
+		li.list-group-item
+			span.big 9人场
+			span.small ￥298
+			span.badge (送一件衣服)
+		li.list-group-item
+			span.big 9人场
+			span.small ￥298
+			span.badge (送一件衣服)
+		li.list-group-item
+			span.big 9人场
+			span.small ￥298
+			span.badge (送一件衣服)
+	div.button
+		button 球场信息报错
+
+
+
+

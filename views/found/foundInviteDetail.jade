@@ -1,0 +1,32 @@
+extends ../common/layout
+include ../common/found-title
+append style
+	link(rel="stylesheet", href="../css/foundInviteDetail.css")
+	
+block body 
+	ul.list-group
+		p.title 比赛信息
+		li.list-group-item 时间
+			span.badge 1993/4/9 16:07-16:08
+		li.list-group-item 场地
+			span.badge 四川农业大学三区
+		li.list-group-item 位置
+			span.badge.icon
+			span.badge 四川大学信息与工程技术学院
+	div.media.teamlist
+			p.title 球队状况
+			div.media-left
+				img.media-object(src='../images/team_default_pic.png')
+			div.media-body.media-middle
+				h1 球队名称
+				h4 
+					span 胜
+					span 25 /
+					span 平
+					span 25 /
+					span 负
+					span.icon
+				h4 四川 成都 (21人)
+	div.button
+		button 立即报名
+
