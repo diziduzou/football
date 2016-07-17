@@ -1,0 +1,32 @@
+extends ../common/layout
+include ../predetermine/Item
+
+
+append style
+	link(rel="stylesheet", href="../css/centerDetail.css")
+
+block body
+	ul.list-group.first
+		li.list-group-item 用户名
+			span.badge
+				img(src="../images/head_default.png", alt="").head
+				img(src="../images/arrow_right_gray.png", alt="")
+	ul.list-group
+		li.list-group-item 用户名
+			span.badge KK
+				img(src="../images/arrow_right_gray.png", alt="")
+		li.list-group-item 性别
+			span.badge 男
+				img(src="../images/arrow_right_gray.png", alt="")
+		li.list-group-item 位置
+			span.badge 请选择你擅长的位置
+				img(src="../images/arrow_right_gray.png", alt="")
+		li.list-group-item 身高
+			span.badge 请选择你的身高
+				img(src="../images/arrow_right_gray.png", alt="")
+		li.list-group-item 体重
+			span.badge 请选择你的体重
+				img(src="../images/arrow_right_gray.png", alt="")
+		li.list-group-item 生日
+			span.badge 请选择你的生日
+				img(src="../images/arrow_right_gray.png", alt="")

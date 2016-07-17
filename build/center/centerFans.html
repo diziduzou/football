@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <title>标题</title>
+    <script src="../../public/bower/jquery/dist/jquery.min.js"></script>
+    <script src="../../public/bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../../public/bower/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/centerFans.css"/>
+  </head>
+  <div class="media">
+    <div class="media-left"><img src="../images/head_default.png" alt="" class="media-object"/></div>
+    <div class="media-body media-middle">
+      <p>凯乐520<a class="AbuttonToNotice"><span class="plus">+ 关注</span><span class="tick">已关注<img src="../images/arrow_down_white.png" alt=""/></span></a></p>
+    </div>
+  </div>
+  <div class="media">
+    <div class="media-left"><img src="../images/head_default.png" alt="" class="media-object"/></div>
+    <div class="media-body media-middle">
+      <p>凯乐520<a class="AbuttonToNotice"><span class="plus">+ 关注</span><span class="tick">已关注<img src="../images/arrow_down_white.png" alt=""/></span></a></p>
+      <script>
+        $(function () {
+        	$('.AbuttonToNotice').on('click',function () {
+        		$(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active')
+        	})
+        })
+      </script>
+    </div>
+  </div>
+</html>

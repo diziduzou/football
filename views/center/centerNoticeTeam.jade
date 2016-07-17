@@ -1,0 +1,27 @@
+extends ../common/layout
+
+append style
+	link(rel="stylesheet", href="../css/centerNotice.css")
+
+block body
+	div.Team
+		div.nav.nav-pills
+			li(role='presentation').border-right.active
+				a(href='centerNoticePlayer.html') 球员
+			li(role='presentation')
+				a(href="centerNoticeTeam.html") 球队
+
+		div.gray-line
+		ul.list-group
+			li.list-group-item
+				div.media
+					div.media-left
+						img(src="../images/head_default.png", alt="").media-object
+					div.media-body.media-middle
+						p 爱老虎油对
+			li.list-group-item
+				div.media
+					div.media-left
+						img(src="../images/head_default.png", alt="").media-object
+					div.media-body.media-middle
+						p 上帝对

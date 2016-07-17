@@ -8,10 +8,8 @@
 *.sublime-*
 
 # bower
-bower_components
-public/bower
-
-# phpmyadmin
+bower_components/bower/# phpmyadmin
+bower_components/
 phpmyadmin/*
 
 # npm
@@ -32,3 +30,6 @@ views/**/*.html
 .gradle
 out
 .htaccess
+
+
+#public/bower

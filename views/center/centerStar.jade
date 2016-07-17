@@ -1,0 +1,13 @@
+extends ../common/layout
+include ../predetermine/Item
+
+
+append style
+	link(rel="stylesheet", href="../css/predetermine.css")
+	link(rel="stylesheet", href="../css/star.css")
+block body
+	ul.list-group.big
+		li.list-group-item
+			+Item()
+		li.list-group-item
+			+Item()

@@ -1,0 +1,31 @@
+extends ../common/layout
+include ../common/foundTeamDetailItem
+
+append style
+	link(rel="stylesheet", href="../css/centerFans.css")
+block body
+	div.media
+		div.media-left
+			img(src="../images/head_default.png", alt="").media-object
+		div.media-body.media-middle
+			p 凯乐520
+				a.AbuttonToNotice
+					span.plus + 关注
+					span.tick 已关注
+						img(src="../images/arrow_down_white.png", alt="")
+	div.media
+		div.media-left
+			img(src="../images/head_default.png", alt="").media-object
+		div.media-body.media-middle
+			p 凯乐520
+				a.AbuttonToNotice
+					span.plus + 关注
+					span.tick 已关注
+						img(src="../images/arrow_down_white.png", alt="")
+			script.
+				$(function () {
+					$('.AbuttonToNotice').on('click',function () {
+						$(this).hasClass('active')?$(this).removeClass('active'):$(this).addClass('active')
+					})
+				})
+

@@ -1,0 +1,60 @@
+extends ../common/layout
+
+append style
+	link(rel="stylesheet", href="../css/centerIndex.css")
+block body
+	div.Center
+		div.headTitle.media
+			div.media-left
+				img(src="../images/head_default.png", alt="").media-object
+			div.media-body.media-heading
+				h3 凯乐520
+				h5 \(^o^)/~
+		div.tags.row
+			div.col-xs-4.border-right
+				a(href="")
+					h3 56
+					h5 动态
+			div.col-xs-4.border-right
+				a(href="")
+					h3 56
+					h5 关注
+			div.col-xs-4
+				a(href="")
+					h3 73
+					h5 粉丝
+
+		ul.center-list.list-group
+			li.list-group-item.media
+				a(href="")
+					div.media-left
+						img(src="../images/my_icon_message.png", alt="").media-object
+					div.media-body.media-middle
+						h5 我的消息
+					div.media-right.media-middle
+						img(src="../images/arrow_right_gray.png", alt="").not-object
+			li.list-group-item.media
+				a(href="")
+					div.media-left
+						img(src="../images/my_icon_fav.png", alt="").media-object
+					div.media-body.media-middle
+						h5 我的收藏
+					div.media-right.media-middle
+						img(src="../images/arrow_right_gray.png", alt="").not-object
+			li.list-group-item.media
+				a(href="")
+					div.media-left
+						img(src="../images/my_icon_info.png", alt="").media-object
+					div.media-body.media-middle
+						h5 个人资料
+					div.media-right.media-middle
+						img(src="../images/arrow_right_gray.png", alt="").not-object
+		div.owner
+			div.media
+				a(href="")
+					div.media-left
+						img(src="../images/my_icon_master.png", alt="").media-object
+					div.media-body.media-middle
+						h4 我是球场主
+					div.media-right.media-middle
+							img(src="../images/arrow_right_gray.png", alt="").not-object
